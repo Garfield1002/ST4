@@ -314,6 +314,28 @@
   },
   {
    "source": [
+    "Replaces `age` with a normalized column"
+   ],
+   "cell_type": "markdown",
+   "metadata": {}
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# normalizess the new column\n",
+    "minV = df['age'].min()\n",
+    "maxV = df['age'].max()\n",
+    "df['age'] = df['age'].apply(lambda e: (e - minV) / (maxV - minV))\n",
+    "\n",
+    "# replaces Nan by the avg\n",
+    "df['age'].fillna(df['age'].mean(skipna=True))"
+   ]
+  },
+  {
+   "source": [
     "The possible values for `numberChildren` are `'1'`, `'2'`, `'3'`, `'4'`, `'4+'` and `'NaN'`. We will be creating a column `nbChildren` of type `int` where `'NaN'` will be mapped to `None`."
    ],
    "cell_type": "markdown",
@@ -415,12 +437,71 @@
    ]
   },
   {
+   "source": [
+    "Handles the closest shop"
+   ],
+   "cell_type": "markdown",
+   "metadata": {}
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "df['magasin']           = df['closestShop'].apply(lambda e: 1 if e =='1. Magasin de Proximit�' else -1)\n",
+    "df['moyenneSurface']    = df['closestShop'].apply(lambda e: 1 if e =='2. Moyenne Surface' else -1)\n",
+    "df['superMarket']       = df['closestShop'].apply(lambda e: 1 if e =='3. SuperMarket' else -1)\n",
+    "df['hyperMarket']       = df['closestShop'].apply(lambda e: 1 if e =='4. HyperMarket' else -1)\n",
+    "df['drive']             = df['closestShop'].apply(lambda e: 1 if e =='5. Drive' else -1)\n",
+    "df['hardDiscount']      = df['closestShop'].apply(lambda e: 1 if e =='6. Hard Discounter' else -1)\n",
+    "\n",
+    "# removes extra column\n",
+    "df.drop(columns=['closestShop'])"
+   ]
+  },
+  {
    "cell_type": "code",
    "execution_count": null,
    "metadata": {},
    "outputs": [],
    "source": [
     "df"
+   ]
+  },
+  {
+   "source": [
+    "In order to have more information about customers, we are going to add features, using the data set \"consumer actions\"\n"
+   ],
+   "cell_type": "markdown",
+   "metadata": {}
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "df_consumer_actions = pd.read_csv(r\"DS_CentraleSupelec_ST42021/DS_CentraleSupelec_consumeractions.csv\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "df_consumer_actions"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "df_merged = pd.merge(df,df_consumer_actions)\n",
+    "df_merged"
    ]
   },
   {
