@@ -10,12 +10,12 @@
    "name": "python",
    "nbconvert_exporter": "python",
    "pygments_lexer": "ipython3",
-   "version": "3.8.3"
+   "version": "3.9.2"
   },
   "orig_nbformat": 2,
   "kernelspec": {
-   "name": "python383jvsc74a57bd04e3844b72a7cf8ab0d3d9d1f66ba811b683ddb4d84051a42926a17d4fe42a429",
-   "display_name": "Python 3.8.3 64-bit ('base': conda)"
+   "name": "python392jvsc74a57bd0ac59ebe37160ed0dfa835113d9b8498d9f09ceb179beaac4002f036b9467c963",
+   "display_name": "Python 3.9.2 64-bit"
   },
   "metadata": {
    "interpreter": {
@@ -424,63 +424,11 @@
    ]
   },
   {
-   "source": [
-    "In order to have more information about customers, we are going to add features, using the data set \"consumer actions\"\n"
-   ],
-   "cell_type": "markdown",
-   "metadata": {}
-  },
-  {
    "cell_type": "code",
    "execution_count": null,
    "metadata": {},
    "outputs": [],
-   "source": [
-    "df_consumer_actions = pd.read_csv(r\"DS_CentraleSupelec_ST42021/DS_CentraleSupelec_consumeractions.csv\")"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "df_consumer_actions"
-   ]
-  },
-  {
-   "source": [
-    "we will only use if a user has opened an email related to 'Fairy PEPS Platinum+ Tout-en-1' which is a dish washer product."
-   ],
-   "cell_type": "markdown",
-   "metadata": {}
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "\n",
-    "text = df_consumer_actions['brandName'][0]\n",
-    "df_consumer_actions['brandName'] = df_consumer_actions['brandName']== text\n",
-    "df_consumer_actions['brandName2'] = df_consumer_actions['brandName2']== text\n",
-    "df_consumer_actions['brand'] = df_consumer_actions['brandName'] | df_consumer_actions['brandName2']\n",
-    "df_consumer_actions =  df_consumer_actions.drop(columns=['event', 'originalTimestamp', 'brandName', 'brandName2', 'subjectLine', 'url', 'keyword','couponRedemptionDate'])\n",
-    "\n",
-    "df_consumer_actions"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "df_merged = pd.merge(df,df_consumer_actions, how='left')\n",
-    "df_merged = df_merged.rename(columns={\"brand\": \"Interested_email\"})\n",
-    "df_merged"
-   ]
+   "source": []
   }
  ]
 }
