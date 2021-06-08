@@ -3,3 +3,5 @@ seaborn  == 0.11.0
 matplotlib  == 3.2.2
 numpy  == 1.18.5
 ipynb
+sklearn
+xgboost
