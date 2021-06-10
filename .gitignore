@@ -1,2 +1,9 @@
-DS_CentraleSupelec_ST42021/
+# Mac
 .DS_Store
+
+# Sensitive Data
+DS_CentraleSupelec_ST42021/
+data/
+
+# catboost
+catboost_info/
