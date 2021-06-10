@@ -23,7 +23,7 @@ Todo
 | Paul  |   [paulpacaud](https://github.com/paulpacaud)   |
 | Jack  | [Garfiled1002](https://github.com/Garfield1002) |
 | Anna  | [AnnaGrigoriu](https://github.com/AnnaGrigoriu) |
-| Mateo |  [cleachataig](https://github.com/cleachataig)  |
+| Mateo |[mateodufresne](https://github.com/mateodufresne)|
 | Clea  |  [cleachataig](https://github.com/cleachataig)  |
 
 ## ⚖ Licence
