@@ -26,6 +26,6 @@ Todo
 | Mateo |  [cleachataig](https://github.com/cleachataig)  |
 | Clea  |  [cleachataig](https://github.com/cleachataig)  |
 
-## ⚖ Liscence
+## ⚖ Licence
 
 Todo
