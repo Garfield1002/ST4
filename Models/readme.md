@@ -1,10 +1,10 @@
 # Different Models
 
-To find the best results possible, we have experimented with many different types of models
+To find the best results possible, we have experimented with many different types of models.
 
 ## 📚 Description
 
-A short description of each model
+Here is a short description of each model.
 
 |            filename            |                                   model                                   |                                 description                                  | accuracy |
 | :----------------------------: | :-----------------------------------------------------------------------: | :--------------------------------------------------------------------------: | :------: |
