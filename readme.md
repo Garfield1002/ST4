@@ -14,8 +14,7 @@ Find correlation to determine which users want to use the cleaning product for a
 
 ## 📚 Description
 
-`Models`
-| `Tensorflow.ipynb`
+` `Models`|`Tensorflow.ipynb`
 
 ## 🧪 Usage
 
