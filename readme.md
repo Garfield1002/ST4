@@ -31,3 +31,7 @@ Todo
 | Anna  |  [AnnaGrigoriu](https://github.com/AnnaGrigoriu)  |
 | Mateo | [mateodufresne](https://github.com/mateodufresne) |
 | Clea  |   [cleachataig](https://github.com/cleachataig)   |
+
+## ⚖ License
+
+[MIT License](License)
