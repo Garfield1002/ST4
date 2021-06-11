@@ -14,7 +14,11 @@ Find correlation to determine which users want to use the cleaning product for a
 
 ## 📚 Description
 
-` `Models`|`Tensorflow.ipynb`
+`Cleaning`
+| `cleanData.ipynb`: A script to clean the data. More information can be found [here]()
+
+`Models`
+|`Tensorflow.ipynb`: A [neural network](https://en.wikipedia.org/wiki/Artificial_neural_network) using the [tensorflow](https://www.tensorflow.org/) library.
 
 ## 🧪 Usage
 
