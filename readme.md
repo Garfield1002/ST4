@@ -14,11 +14,9 @@ Find correlation to determine which users want to use the cleaning product for a
 
 ## 📚 Description
 
-`Cleaning`
-| `cleanData.ipynb`: A script to clean the data. More information can be found [here]()
+More information about the cleaning process is available [here](Cleaning/readme.md).
 
-`Models`
-|`Tensorflow.ipynb`: A [neural network](https://en.wikipedia.org/wiki/Artificial_neural_network) using the [tensorflow](https://www.tensorflow.org/) library.
+More information about the models is available [here](Models/readme.md).
 
 ## 🧪 Usage
 
