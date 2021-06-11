@@ -12,20 +12,21 @@
 
 Find correlation to determine which users want to use the cleaning product for automatic dishwasher
 
+## 📚 Description
+
+`Models`
+| `Tensorflow.ipynb`
+
 ## 🧪 Usage
 
 Todo
 
 ## 👋 Our Group 8
 
-| Name  |                     Github                      |
-| :---: | :---------------------------------------------: |
-| Paul  |   [paulpacaud](https://github.com/paulpacaud)   |
-| Jack  | [Garfiled1002](https://github.com/Garfield1002) |
-| Anna  | [AnnaGrigoriu](https://github.com/AnnaGrigoriu) |
-| Mateo |[mateodufresne](https://github.com/mateodufresne)|
-| Clea  |  [cleachataig](https://github.com/cleachataig)  |
-
-## ⚖ Licence
-
-Todo
+| Name  |                      Github                       |
+| :---: | :-----------------------------------------------: |
+| Paul  |    [paulpacaud](https://github.com/paulpacaud)    |
+| Jack  |  [Garfiled1002](https://github.com/Garfield1002)  |
+| Anna  |  [AnnaGrigoriu](https://github.com/AnnaGrigoriu)  |
+| Mateo | [mateodufresne](https://github.com/mateodufresne) |
+| Clea  |   [cleachataig](https://github.com/cleachataig)   |
