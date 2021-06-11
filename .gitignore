@@ -3,7 +3,7 @@
 
 # Sensitive Data
 DS_CentraleSupelec_ST42021/
-data/
+data/*
 
 # catboost
 catboost_info/

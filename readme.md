@@ -14,7 +14,9 @@ Find correlation to determine which users want to use the cleaning product for a
 
 ## 📚 Description
 
-` `Models`|`Tensorflow.ipynb`
+More information about the cleaning process is available [here](Cleaning/readme.md).
+
+More information about the models is available [here](Models/readme.md).
 
 ## 🧪 Usage
 
@@ -29,3 +31,7 @@ Todo
 | Anna  |  [AnnaGrigoriu](https://github.com/AnnaGrigoriu)  |
 | Mateo | [mateodufresne](https://github.com/mateodufresne) |
 | Clea  |   [cleachataig](https://github.com/cleachataig)   |
+
+## ⚖ License
+
+[MIT License](License)
