@@ -16,9 +16,12 @@ In order to get better data, and better results on our testing, we decided to co
 
 After doing this process, we noticed a considerable accuracy boost.
 
-## 🌐 PAUL
+## 🌐 Adding features with the second dataset
 
-PAUL
+The more relevant features we have, the better it is, that is why we have used the data set "consumeractions" which gives relevant information about the engagement rate of each user toward the brands of P&G, and the level of interest of these users. We used this data set to add new features to our user's rows :
+'interested_by_fairypeps_email' : says if a user has had actions related to an email about FAIRY PEPS
+'level_of_interest_about_marketing' : a continuous value between 0-1 depending on whether the user has just opened an email or has gone further by clicking or using coupons.
+'number_of_actions' : counter of the actions of the user related to emails, coupons or search bar of the website
 
 ## 📚 Description
 
@@ -47,7 +50,7 @@ PAUL
 |            hyperMarket            |   Float   |                          Is the shop closest to the user a `hyperMarket` ? `1.0`: yes, `0.0`: no                          |  `0.0`   |
 |               drive               |   Float   |                             Is the shop closest to the user a `drive` ? `1.0`: yes, `0.0`: no                             |  `0.0`   |
 |           hardDiscount            |   Float   |                         Is the shop closest to the user a `Hard Discount` ? `1.0`: yes, `0.0`: no                         |  `0.0`   |
-|   interested_by_fairypeps_email   |   Float   |                                                                                                                           | Average  |
-| level_of_interest_about_marketing |   Float   |                                                                                                                           | Average  |
-|         number_of_actions         |   Float   |                                                                                                                           | Average  |
-|            washDishes             |   Float   |                                                                                                                           |          |
+|   interested_by_fairypeps_email   |   Float   |                        Has the user had an action related to the brand "FAIRY PEPS" ? `1.0`: yes, `0.0`: no               | `0.0`  |
+| level_of_interest_about_marketing |   Float   |                        A float describing the user's level of interest about P&G marketing ranging between `0.0`: email opened, to `1.0`: coupon used                                                    | Average  |                                               
+|         number_of_actions         |   Float   |                        counter of the actions of the user related to emails, coupons or search bar of the website                                                                                                   | Average  |
+|            washDishes             |   Float   |                        Has the user a washDishes ? `1.0`: yes, `0.0`: no                                                                                                   |    `0.0`      |
